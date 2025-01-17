@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Color on Click</title>
+  <style>
+    /* Default styling for the element */
+    .clickable {
+      color: blue; /* Default color */
+      cursor: pointer; /* Change cursor to pointer */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Element with class 'clickable' -->
+<p class="clickable" id="changeColorElement">Click me to change color</p>
+
+<script>// Get the element
+    var changeColorElement = document.getElementById('changeColorElement');
+    
+    // Add click event listener
+    changeColorElement.addEventListener('click', function() {
+        // Change the color when clicked
+        changeColorElement.style.color = 'red'; // Change to any color you want
+    });
+    </script> <!-- Link your JavaScript file -->
+</body>
+</html>
